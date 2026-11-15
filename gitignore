@@ -1,0 +1,8 @@
+# Archivos de datos pesados (no se suben; ver README)
+data/merged_dataset_retail_2009_2011.csv
+data/retail_limpio.csv
+
+# Archivos temporales
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
