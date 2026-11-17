@@ -100,11 +100,17 @@ analisis-ventas-clientes-retail/
 
 Python, pandas, NumPy, Matplotlib, Seaborn y Google Colab.
 
+
+## Dashboard interactivo
+
+[Ver el dashboard](https://hernanjuarez.github.io/analisis-ventas-clientes-retail/)
+
+Ingresos por mes, productos, países y segmentos de clientes (RFM), con gráficos interactivos hechos con Plotly.
+
 ## Próximos pasos posibles
 
 - Segmentar clientes con KMeans y comparar con los segmentos por reglas.
 - Pronosticar ventas mensuales considerando la estacionalidad.
-- Armar un dashboard interactivo.
 
 ## Autor
 
