@@ -61,12 +61,18 @@ El dataset original tiene 1.067.371 filas. Estas son las decisiones tomadas y su
 
 Quedaron **1.021.128 filas** para el análisis. Las filas separadas se guardan aparte, no se descartan.
 
+## Fuente de los datos
+
+Los datos son el dataset Online Retail II, de transacciones de una tienda online del Reino Unido entre el 1/12/2009 y el 9/12/2011, con licencia [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+> Chen, D. (2012). Online Retail II [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5CG6D
+El archivo que usé es una versión que une los dos años en un solo CSV, publicada en Kaggle por krjynt.
+
 ## Limitaciones
 
 - No hay datos de márgenes ni de costos, por lo que no se puede estimar la rentabilidad de las acciones propuestas.
 - Cerca del 22% de las filas no tienen Customer ID y quedan fuera del análisis de clientes.
 - Diciembre de 2011 está incompleto, por lo que no es comparable con otros meses.
-- El perfil mayorista de algunos clientes es una hipótesis sugerida por los datos, no confirmada.
+- El perfil mayorista de algunos clientes es una hipótesis que sugieren los datos. La documentación del dataset original indica que muchos clientes son mayoristas, pero no se puede confirmar cliente por cliente.
 - Los segmentos RFM se definieron con reglas simples sobre cuartiles y pueden ajustarse.
 
 ## Estructura del repositorio
@@ -85,7 +91,7 @@ analisis-ventas-clientes-retail/
 
 ## Cómo reproducir el análisis
 
-1. Descargá el dataset completo desde Kaggle: [LINK AL DATASET EN KAGGLE] (archivo `merged_dataset_retail_2009_2011.csv`). No se incluye en el repositorio por su tamaño (88 MB). Revisá la licencia en la página de origen.
+1. Descargá el dataset completo desde Kaggle: [Online Retail II 2009-2011 Merged](https://www.kaggle.com/datasets/krjynt/online-retail-ii-2009-2011-merged) (archivo `merged_dataset_retail_2009_2011.csv`). No se incluye en el repositorio por su tamaño (88 MB).
 2. Abrí el notebook en Google Colab con el botón de arriba, o en Jupyter.
 3. Cambiá la variable `ruta` de la segunda celda por la ubicación del CSV en tu Drive o en tu equipo. El notebook original monta Google Drive; si lo corrés localmente, podés quitar esa parte.
 4. Si lo corrés en tu equipo, instalá las dependencias con `pip install -r requirements.txt`.
@@ -102,4 +108,4 @@ Python, pandas, NumPy, Matplotlib, Seaborn y Google Colab.
 
 ## Autor
 
-[@hernanjuarez](https://github.com/hernanjuarez) · [(https://www.linkedin.com/in/hernanjuarez99/)]
+[@hernanjuarez](https://github.com/hernanjuarez) · [LinkedIn](https://www.linkedin.com/in/hernanjuarez99/).
